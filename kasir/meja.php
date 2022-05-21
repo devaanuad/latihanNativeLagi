@@ -35,7 +35,6 @@ if (isset($_POST['edit_meja'])) {
         $sql = "update t_meja set no_meja = '$no_meja', keterangan = '$keterangan', status = '$status' where id_meja = '$id_meja'";
         $result1 = mysqli_query($tiarakoneksi, $sql);
         if ($result1) {
-            echo "<script>alert('Data berhasil diubah');</script>";
             echo "<script>location.href='index.php?page=meja';</script>";
         } else {
             echo "<script>alert('Data gagal diubah');</script>";
@@ -150,7 +149,6 @@ if (isset($_GET['hapus'])) {
         </div>
     </div>
 </div>
-
 
 
 <!-- MODAL TAMBAH MEJA -->

@@ -257,7 +257,15 @@ if (@!$_SESSION['hak_akses'] == 'kasir') {
         });
         $(document).ready(function() {
             $('#data-tables-menu').dataTable({
-                "lengthChange": false
+                "lengthChange": false,
+
+            });
+        });
+        $(document).ready(function() {
+            $('#data-tables-cart-menu').dataTable({
+                "lengthChange": false,
+                "pageLength": 5
+
             });
         });
     </script>

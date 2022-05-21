@@ -25,6 +25,7 @@ if (@$_POST['submit_login']) {
             } elseif ($data['hak_akses'] == 'kasir') {
                 $_SESSION['nama_user'] = $nama_user;
                 $_SESSION['hak_akses'] = $data['hak_akses'];
+                $_SESSION['id_kasir'] = $data['id_user'];
                 header("location:kasir/index.php");
             }
         } else {

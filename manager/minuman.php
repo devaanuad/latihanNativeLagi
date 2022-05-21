@@ -126,7 +126,7 @@ if (isset($_POST['edit_menu'])) {
                                             </div>
                                             <div class="form-group">
                                                 <label class="control-label">Harga</label>
-                                                <input type="text" class="form-control" id="harga" name="harga" required value="<?= $data['harga'] ?>">
+                                                <input type="number" class="form-control" name="harga" required value="<?= $data['harga'] ?>">
                                             </div>
                                             <div class="form-group">
                                                 <label class="control-label">Kategori</label>
@@ -173,7 +173,7 @@ if (isset($_POST['edit_menu'])) {
                     </div>
                     <div class="form-group">
                         <label class="control-label">Harga</label>
-                        <input type="text" class="form-control" id="harga2" name="harga" required>
+                        <input type="number" class="form-control" name="harga" required>
                     </div>
                     <div class="form-group">
                         <label class="control-label">Kategori</label>
