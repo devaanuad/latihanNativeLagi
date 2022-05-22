@@ -1,0 +1,24 @@
+  <link rel="stylesheet" type="text/css" href="../assets/DataTables/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/DataTables/jquery.dataTables.min.css">
+
+    <script type="text/javascript" src="../assets/DataTables/datatables.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#data-tables').DataTable()
+        });
+        $(document).ready(function() {
+            $('#data-tables-menu').dataTable({
+                "lengthChange": false,
+
+            });
+        });
+        $(document).ready(function() {
+            $('#data-tables-cart-menu').dataTable({
+                "lengthChange": false,
+                "pageLength": 5
+
+            });
+        });
+    </script>
+
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>

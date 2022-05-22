@@ -22,9 +22,27 @@ if (@!$_SESSION['hak_akses'] == 'kasir') {
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="../assets/css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/struk_kasir.css" />
     <!-- Data Table -->
     <link rel="stylesheet" type="text/css" href="../assets/DataTables/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/DataTables/buttons.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/DataTables/jquery.dataTables.min.css">
+
+    <style>
+        @media print {
+            .sidebar {
+                display: none;
+            }
+
+            .navbar {
+                display: none;
+            }
+
+            .uwu {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -71,6 +89,12 @@ if (@!$_SESSION['hak_akses'] == 'kasir') {
                 <a class="nav-link" href="index.php?page=meja">
                     <i class="fas fa-chair"></i>
                     <span>Meja</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.php?page=laporan">
+                    <i class="fas fa-chair"></i>
+                    <span>Laporan</span></a>
             </li>
 
 
@@ -170,6 +194,12 @@ if (@!$_SESSION['hak_akses'] == 'kasir') {
                         case 'transaksi':
                             include "transaksi.php";
                             break;
+                        case 'struk':
+                            include "struk.php";
+                            break;
+                        case 'laporan':
+                            include "laporan.php";
+                            break;
                         case 'dashboard':
                             include "dashboard.php";
                             break;
@@ -250,6 +280,10 @@ if (@!$_SESSION['hak_akses'] == 'kasir') {
     <script src="../assets/js/demo/chart-area-demo.js"></script>
     <script src="../assets/js/demo/chart-pie-demo.js"></script>
     <!-- Data Table -->
+    <script type="text/javascript" src="../assets/DataTables/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="../assets/DataTables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../assets/DataTables/buttons.print.min.js"></script>
+    <script type="text/javascript" src="../assets/DataTables/dataTables.buttons.min.js"></script>
     <script type="text/javascript" src="../assets/DataTables/datatables.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {

@@ -64,7 +64,7 @@ if (isset($_GET['hapus'])) {
 
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">User</h1>
+    <h1 class="h3 mb-0 text-gray-800">Data Meja</h1>
     <button class="btn mb-3 invert" style="background-color: #4B0080; color: #FFFFFF" data-toggle="modal" data-target="#tambah_meja"><i class="fas fa-plus fa-sm"></i> Tambah Meja
     </button>
 </div>

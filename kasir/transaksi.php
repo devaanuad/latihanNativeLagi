@@ -226,7 +226,7 @@
                                 unset($_SESSION['cart']);
                                 unset($_SESSION['grandtotal']);
                                 echo "<script>alert('Transaksi Berhasil');</script>";
-                                echo "<script>location='index.php?page=transaksi';</script>";
+                                echo "<script>location='index.php?page=struk&transaksi=$id_transaksi';</script>";
                             }
                         }
                     }

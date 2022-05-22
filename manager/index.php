@@ -167,6 +167,9 @@ if (@!$_SESSION['hak_akses'] == 'manager') {
                         case 'meja':
                             include "meja.php";
                             break;
+                        case 'laporan':
+                            include "laporan.php";
+                            break;
                         default:
                             $page = "dashboard";
                             include "dashboard.php";
