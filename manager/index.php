@@ -22,9 +22,25 @@ if (@!$_SESSION['hak_akses'] == 'manager') {
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Cusom styles for this template-->
     <link href="../assets/css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/struk_kasir.css" />
     <!-- Data Table -->
     <link rel="stylesheet" type="text/css" href="../assets/DataTables/datatables.min.css" />
     <link rel="stylesheet" type="text/css" href="../assets/DataTables/jquery.dataTables.min.css">
+    <style>
+        @media print {
+            .sidebar {
+                display: none;
+            }
+
+            .navbar {
+                display: none;
+            }
+
+            .uwu {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -162,13 +178,14 @@ if (@!$_SESSION['hak_akses'] == 'manager') {
                         case 'minuman':
                             include "minuman.php";
                             break;
-                        case 'dashboard':
-                            include "dashboard.php";
                         case 'meja':
                             include "meja.php";
                             break;
                         case 'laporan':
                             include "laporan.php";
+                            break;
+                        case 'struk':
+                            include "struk.php";
                             break;
                         default:
                             $page = "dashboard";

@@ -27,7 +27,6 @@ if (@!$_SESSION['hak_akses'] == 'kasir') {
     <link rel="stylesheet" type="text/css" href="../assets/DataTables/datatables.min.css" />
     <link rel="stylesheet" type="text/css" href="../assets/DataTables/buttons.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/DataTables/jquery.dataTables.min.css">
-
     <style>
         @media print {
             .sidebar {
